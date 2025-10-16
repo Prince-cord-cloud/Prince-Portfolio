@@ -24,6 +24,3 @@ Hi, I'm **[Your Name]** — a web developer passionate about building responsive
 ## ⚙️ Setup
 ```bash
 git clone https://github.com/Prince-cord-cloud/portfolio.git
-cd portfolio
-npm install
-npm start
