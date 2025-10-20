@@ -17,11 +17,11 @@ window.addEventListener("load", () => {
 });
 
 // Prince Tech WhatsApp number
-const PHONE_NUMBER = "+2347069943790";
+const PHONE_NUMBER = "https://wa.me/2347069943790";
 
 function openWhatsAppQuick() {
     const message = encodeURIComponent("Hello Prince Tech! I'm interested in your graphic design or frontend services.");
-    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, "_blank");
+    window.open(`https://wa.me/${2347069943790}?text=${message}`, "_blank");
 }
 
 function prefillService(service) {
@@ -43,7 +43,7 @@ function submitBooking(e) {
         `Hello Prince Tech! I'd like to book a service.\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nDate: ${date}\nTime: ${time}\nNotes: ${notes}`
     );
 
-    window.open(`https://wa.me/${PHONE_NUMBER}?text=${msg}`, "_blank");
+    window.open(`https://wa.me/${2347069943790}?text=${msg}`, "_blank");
 }
 
 function toggleMenu() {
