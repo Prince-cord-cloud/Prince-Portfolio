@@ -9,3 +9,9 @@ if (navLinks.style.display === "flex") {
     navLinks.style.display = "flex";
 }
 });
+window.addEventListener("load" , () => {
+    document.body.classList.add("loader")
+    setTimeout(() => {
+        document.body.style.overflow = "auto";
+    }, 1500);
+});

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact Us - PRINCE-TECH HUB</title>
     <link rel="stylesheet" href="Contact.css">
 </head>
 
@@ -15,58 +15,101 @@
             <a href="index.html">Home</a>
             <a href="About me index.html">About Me</a>
             <a href="Skills.html">Skills</a>
+            <a href="Services.html">Services</a>
             <a href="Resume.html">Resume</a>
             <a href="Contact.html" class="active">Contact</a>
         </nav>
-        <A href="Contact.html" class="talk-btn" style="text-decoration: none;">Let's Talk 💬</A>
+        <A href="https://wa.me/2347069943790" class="talk-btn" style="text-decoration: none;">Let's Talk 💬</A>
         <div class="menu-icon" id="menuIcon">&#9776;</div>
     </header>
 
 
-    <!-- Contact Section -->
-    <main class="contact-section">
-        <h1>Contact Me</h1>
-        <p class="intro">Feel free to reach out for collaborations, projects, or any inquiries.</p>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact">
+        <div class="contact-info">
+            <h4>GET IN TOUCH</h4>
+            <h1>CONTACT <span>US</span></h1>
+            <p>We offer expert services? Reach out by filling the form or send me a quick message on WhatsApp.</p>
 
-        <div class="contact-grid">
-            <!-- Contact Form -->
-            <section class="contact-form fade-in">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required />
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <a href="Thank you.html" class="btn" style="text-decoration: none; text-align: center;">Send Message</a>
-                </form>
-            </section>
+            <div class="contact-details">
+                <p><strong>Email Address</strong> princecreativegraphics@gmail.com
+                <p><strong>Phone:</strong> +234 706 994 3790, +234 907 563 4424</p>
+                <p><strong>Address:</strong> Port Harcourt, Rivers State, Nigeria</p>
+            </div>
 
-            <!-- Contact Info -->
-            <section class="contact-info fade-in">
-                <h2>Get in Touch</h2>
-                <p><strong>Email:</strong> softedgetech06@gmail.com</p>
-                <p><strong>Phone:</strong> +234 706 994 3790</p>
-                <p><strong>Address:</strong> Rivers, Nigeria</p>
-
-                <div class="map-box">
-                    <!-- You can replace the src link below with your actual Google Map Embed URL -->
-                    <iframe src="https://maps.google.com/maps?q=Lagos%20Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
-            </section>
+            <div class="whatsapp-contact">
+                <a href="https://wa.me/2347069943790" target="_blank" class="btn">
+                    💬 Message Me on WhatsApp
+                </a>
+            </div>
         </div>
-    </main>
-    </div>
 
-    <script src="Contact.js"></script>
+        <form id="contact-form" class="contact-form">
+            <div class="book">
+                <section id="book">
+                    <div class="hero-card">
+                        <h2>Book Us Now</h2>
+                        <p style="color: white; margin-bottom: 10px;">Complete the form below and we'll Continue on WhatsApp.</p>
+                        <form id="bookFullForm" onsubmit="submitBooking(event)">
+                            <input id="bf-name" placeholder="Full Name" required />
+                            <input id="bf-phone" placeholder="Phone (with country code)" required />
+                            <select id="bf-service" style="width: 100%;
+                            margin-bottom: 15px;
+                            padding: 12px 15px;
+                            border-radius: 8px;
+                            border: none;
+                            outline: none;
+                            background: #222;
+                            color: #fff;
+                            font-size: 1rem;" >
+                                <option>Select ....</option>
+                                <option>Brand Identity - Logo & Assets</option>
+                                <option>UI / Frontend Development</option>
+                                <option>Social Media Graphics</option>
+                                <option>Church/Business Flyer</option>
+                                <option>Custom Project - Discuss</option>
+                            </select>
+                            <input id="bf-date" type="date" />
+                            <input id="bf-time" type="time" />
+                            <textarea id="bf-notes" placeholder="Project details..."></textarea>
+                            <button type="submit" class="Whatsappbtn">Send booking on WhatsApp</button>
+                        </form>
+                    </div>
+    </section>
+    </form>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>PRINCE TECH</h3>
+            <p>We are creative designers dedicated to building digital experiences that inspire.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 PRINCE TECH. All rights reserved.</p>
+        </div>
+
+        <!-- loader section -->
+        <div id=loader>
+            <div class="loader-logo">
+                <img src="Logo Loader.png" alt="loader-logo">
+            </div>
+            <div class="spinner"></div>
+            <p> Loading, please wait...</p>
+        </div>
+        <!-- ===== FLOATING WHATSAPP CHAT BUTTON ===== -->
+        <a href="https://wa.me/2347069943790" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+            <img src="whatsapp icon.png" alt="WhatsApp Chat">
+        </a>
+
+        <script src="Contact.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: transparent;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bcbcbc;
+    font-weight: 600;
+    transition: 0.3s;
+    background: transparent;
+    padding: 5PX;
+    border-radius: 2px;
+}
+.nav-links a.active {
+    background: rgb(255, 255, 255);
+    padding: 5PX;
+    border-radius: 2px;
+}
+.nav-links a:hover,
+.nav-links a.active {
+    color: #000000;
+    background: rgb(255, 255, 255);
+    padding: 5PX;
+    border-radius: 2px;
+}
+
+.talk-btn {
+    background: linear-gradient(90deg, #e48aff, #b3a3ff);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1a1a1d;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #0095e0;
+    margin: 4px;
+    transition: 0.4s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 80px 10%;
+    margin-top: 80PX;
+    gap: 40px;
+}
+
+.services-text {
+    flex: 1 1 45%;
+}
+
+.services-text h4 {
+    color: #0095e0;;
+    margin-bottom: 10px;
+}
+
+.services-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.services-text h1 span {
+    color: #0095e0;
+}
+
+.services-text p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    background: #00e1ff;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #ffffff;
+    transform: translateY(-3px);
+}
+
+.contact-btn {
+    background: transparent;
+    border: 2px solid #0095e0;
+    color: #ffffff;
+}
+
+.contact-btn:hover {
+    background: #00e1ff00;
+    color: #ffffff;
+    box-shadow: 0 0 10px #0095e0;
+    transform: translateY(-3px);
+}
+
+.whatsapp-btn {
+    background: #25d366;
+}
+
+.whatsapp-btn:hover {
+    background: #ffffff;
+}
+
+/* Boxes */
+.services-boxes {
+    flex: 1 1 45%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #000000;
+    border-left: 4px solid #0095e0;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.box:hover {
+    background: #ff7b0018;
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #0095e0;
+}
+
+/* QR / Barcode Section */
+.barcode-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #0a0a0a;
+    border-top: 1px solid #111;
+}
+
+.barcode-section h2 {
+    color: #0095e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.barcode-section p {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.qr-container img {
+    width: 180px;
+    height: 180px;
+    border: 3px solid #0095e0;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    background: #000;
+}
+
+
+.qr-container a {
+    color: #0095e0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.qr-container a:hover {
+    color: #241f1f;
+    padding: 2px;
+    background: #151718;
+}
+
+/* FOOTER */
+footer {
+    background: #0a0a0a;
+    padding: 60px 8% 20px;
+    text-align: center;
+    color: #ccc;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content h3 {
+    font-size: 1.6rem;
+    color: #0095e0;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    font-size: 0.9rem;
+}
+
+
+
+.footer-bottom {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* ===== PAGE LOADER ===== */
+
+/* loader container */
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-logo img{
+    width: 150px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+/* Spinner animation */
+.spinner{
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #0095e0;
+    border-bottom: 4px solid #0095e0;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px #0095e0;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* text under .spinner */
+#loader{
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* main content (hidden until loader) */
+#content{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* fade out animation when page loads */
+.loader #loader{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader #content{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navbar link {
+        position: absolute;
+        top: 70px;
+        right: 2%;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        width: 220px;
+        text-align: right;
+        gap: 15px;
+        padding: 25px 20px;
+        display: none;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #00aaff;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-text,
+    .services-boxes {
+        flex: 1 1 100%;
+    }
+
+    /* QR / Barcode Section */
+    .barcode-section {
+        text-align: center;
+        padding: 70px 20px;
+        background: #0a0a0a;
+        border-top: 2px solid #111;
+    }
+
+    .barcode-section h2 {
+        color: #ff7b00;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .barcode-section p {
+        color: #ccc;
+        font-size: 16px;
+        margin-bottom: 20px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+    }
+
+    .qr-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .qr-container img {
+        width: 180px;
+        height: 180px;
+        border: 3px solid #0095e0;
+        border-radius: 12px;
+        padding: 8px;
+        background: #000;
+    }
+
+    .qr-container a {
+        color: #0095e0;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .qr-container a:hover {
+        color: #fff;
+    }
+}
+    /* Make QR Section Responsive */
+    @media (max-width: 600px) {
+        .barcode-section h2 {
+            font-size: 1.5rem;
+        }
+
+        .qr-container img {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
+    /* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1d;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00aaff;
+    }
+        .menu-icon {
+    display: block;
+    }
+}

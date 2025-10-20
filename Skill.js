@@ -22,3 +22,9 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 
 fadeElements.forEach(el => observer.observe(el));
+window.addEventListener("load" , () => {
+    document.body.classList.add("loader")
+    setTimeout(() => {
+        document.body.style.overflow = "auto";
+    }, 1500);
+});

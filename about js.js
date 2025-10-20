@@ -9,6 +9,13 @@ if (navLinks.style.display === "flex") {
     navLinks.style.display = "flex";
 }
 });
+
+window.addEventListener("load" , () => {
+    document.body.classList.add("loader")
+    setTimeout(() => {
+        document.body.style.overflow = "auto";
+    }, 600);
+});
 // // Scroll animation effect
 // const observer = new IntersectionObserver(
 //     (entries) => {
@@ -22,3 +29,4 @@ if (navLinks.style.display === "flex") {
 // );
 
 document.querySelectorAll(".fade-in, .slide-up").forEach((el) => observer.observe(el));
+
