@@ -180,34 +180,13 @@ header {
     flex-wrap: wrap;
 }
 
-.my-works,
-.download-cv {
-    background: #1a1a1d;
-    border: 1px solid #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-.my-works:hover,
-.download-cv:hover {
-    background: #2d2d33;
-}
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 10px;
-    color: #aaa;
-    border-top: 1px solid #2a2a2d;
-    margin-top: 200px;
-}
+
 /* =HOME SECTION= */
 .home-section {
 border-radius: 15px;
 margin-top: 100px;
-padding: 0px 40px;
+padding: 0px 1px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -239,7 +218,6 @@ margin-bottom: 20px;
 
 .intro p {
 color: #aaa;
-line-height: 1.5;
 font-size: 17px;
 margin-bottom: 30px;
 }
@@ -464,6 +442,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .intro{
+        flex-direction: column;
+        text-align: center;
+    }
+    
 .intro h1 {
     font-size: 34px;
     margin-top: 30px;
@@ -472,7 +455,6 @@ footer {
 .intro p {
     font-size: 17px;
 }
-
 
 .hero-image img {
 width: 200px;
@@ -509,6 +491,7 @@ box-shadow: 0 0 10px #00aaff;
     .hero-section {
     flex-direction: column;
     align-items: center;
+    
     }
 
     .profile-card {

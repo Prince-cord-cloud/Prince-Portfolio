@@ -88,24 +88,39 @@ header {
 
 .resume-section h1 {
     color: #00aaff;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00aaff;
 }
+
 
 .intro {
     color: #ccc;
+    text-align: center;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .resume-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
+    background: #00065356;
+    padding: 5px 5%;
+    border-radius: 10px;
+    outline: 1px solid #0095e0;
     margin-bottom: 40px;
+    line-height: 1.5;
+    box-shadow: 0 0 10px #00aaff;
 }
 
 .resume-box h2 {
     color: #00aaff;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .resume-item {
@@ -132,6 +147,13 @@ header {
 /* Summary */
 .resume-summary h2 {
     color: #00aaff;
+    background: #ffffff;
+    padding: 10px;
+    text-align: center ;
+    border-radius: 10px;
+    outline: 1px solid #0095e0;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px #00aaff;
     margin-bottom: 10px;
 }
 
@@ -270,6 +292,8 @@ footer {
     .sidebar,
     .resume-section {
         width: 100%;
+        text-align: center;
+        line-height: 1.5;
     }
 
     .resume-grid {

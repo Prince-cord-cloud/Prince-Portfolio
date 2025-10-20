@@ -16,38 +16,19 @@ window.addEventListener("load", () => {
     }, 1500);
 });
 
-// Prince Tech WhatsApp number
-const PHONE_NUMBER = "https://wa.me/2347069943790";
+const form = document.getElementById('booking-form');
 
-function openWhatsAppQuick() {
-    const message = encodeURIComponent("Hello Prince Tech! I'm interested in your graphic design or frontend services.");
-    window.open(`https://wa.me/${2347069943790}?text=${message}`, "_blank");
-}
-
-function prefillService(service) {
-    const select = document.getElementById("bf-service");
-    select.value = service;
-    document.getElementById("book").scrollIntoView({ behavior: "smooth" });
-}
-
-function submitBooking(e) {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById("bf-name").value;
-    const phone = document.getElementById("bf-phone").value;
-    const service = document.getElementById("bf-service").value;
-    const date = document.getElementById("bf-date").value;
-    const time = document.getElementById("bf-time").value;
-    const notes = document.getElementById("bf-notes").value;
+    const fullName = document.getElementById('full-name').value;
+    const phoneNumber = document.getElementById('phone-number').value;
+    const services = document.getElementById('services').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const projectDetails = document.getElementById('project-details').value;
 
-    const msg = encodeURIComponent(
-        `Hello Prince Tech! I'd like to book a service.\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nDate: ${date}\nTime: ${time}\nNotes: ${notes}`
-    );
+    const message = `Name: ${fullName}%0A Phone Number: ${phoneNumber}%0A Services: ${services}%0A Date: ${date}%0A Time: ${time}%0A Project Details: ${projectDetails}`;
+    const whatsappUrl = `https://wa.me/+2347069943790?text=${message}`;
 
-    window.open(`https://wa.me/${2347069943790}?text=${msg}`, "_blank");
-}
-
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
+    window.open(whatsappUrl, 'https://wa.me/+2347069943790');
+});

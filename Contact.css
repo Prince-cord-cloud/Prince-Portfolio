@@ -307,7 +307,7 @@ header {
     background: #111;
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px #00aaff;
 }
 
 .contact-form h2 {
@@ -412,6 +412,9 @@ footer {
     .contact-info,
     .contact-form {
         text-align: center;
+    }
+    .contact-form{
+        padding: 5px;
     }
 }
 /* Responsive */

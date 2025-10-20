@@ -47,32 +47,39 @@
         <form id="contact-form" class="contact-form">
             <div class="book">
                 <section id="book">
-                    <div class="hero-card">
-                        <h2>Book Us Now</h2>
-                        <p style="color: white; margin-bottom: 10px;">Complete the form below and we'll Continue on WhatsApp.</p>
-                        <form id="bookFullForm" onsubmit="submitBooking(event)">
-                            <input id="bf-name" placeholder="Full Name" required />
-                            <input id="bf-phone" placeholder="Phone (with country code)" required />
-                            <select id="bf-service" style="width: 100%;
-                            margin-bottom: 15px;
-                            padding: 12px 15px;
-                            border-radius: 8px;
-                            border: none;
-                            outline: none;
-                            background: #222;
-                            color: #fff;
-                            font-size: 1rem;" >
-                                <option>Select ....</option>
-                                <option>Brand Identity - Logo & Assets</option>
-                                <option>UI / Frontend Development</option>
-                                <option>Social Media Graphics</option>
-                                <option>Church/Business Flyer</option>
-                                <option>Custom Project - Discuss</option>
-                            </select>
-                            <input id="bf-date" type="date" />
-                            <input id="bf-time" type="time" />
-                            <textarea id="bf-notes" placeholder="Project details..."></textarea>
-                            <button type="submit" class="Whatsappbtn">Send booking on WhatsApp</button>
+                    <div class="container">
+        <h1 style="color: aqua;
+        font-size: 25px;
+        margin-bottom: 10px;">Book Us Now</h1>
+        <h3 
+        style="color: white;
+        font-size: 15px;
+        margin-bottom: 20px;"
+        >Complete the form below and we'll continue from Whatsapp</h3>
+        <form id="booking-form">
+            <input type="text" id="full-name" placeholder="Full-name" required>
+            <input type="text" id="phone-number" placeholder="Phone-number" required>
+            <select id="services" name="services"
+            style="    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #202227;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;">
+                <option value="logo-design">Select Services ....</option>
+                <option value="logo-design">Logo Design</option>
+                <option value="brochure-design">Brochure Design</option>
+                <option value="business-card-design">Business Card Design</option>
+            </select>
+            <input type="date" id="date" name="date" required>
+            <input type="time" id="time" name="time" required>
+            <textarea id="project-details" placeholder="project-details...." required></textarea>
+            <a href="https://wa.me/2347069943790" class="btn">Book Us Now</a>
+        </form>
+    </div>
                         </form>
                     </div>
     </section>
